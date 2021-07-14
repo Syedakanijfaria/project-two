@@ -121,7 +121,7 @@ Highlight section styles
 .about p{
     width: 470px;
     margin-left: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 .about h1{
     font-size: 48px;
@@ -189,11 +189,13 @@ footer{
     align-items:flex-start;
     width: 170px;
     height: 32px;
+    margin-bottom: 1%;
 }
 .social-links img{
     width: 32px;
     height: 32px;
     padding-left: 8%;
+    
 }
 
 /*----------------------------
