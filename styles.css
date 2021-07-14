@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body{
+    background-color: #F4F4F4;
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*-----------------
+ cover page styles
+ -------------- */
+.cover-page{
+    display: flex;
+    background-color: #2D25A0;
+    margin-bottom: 70px;
+ }
+.cover-description{ 
+    float:left;
+    width: 40%;
+    height: auto;
+    padding: 5%; 
+}
+h1{ 
+    margin-left: 10%; 
+    color: #ffffff;
+    width: 500px;
+    font-size: 64px;
+    font-weight: bold;
+ }
+.acnhorbutton{
+    margin-left: 10%;
+    background-color: #E02C6D;;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 24px;
+ }
+span {
+   content: "\1F86A";
+   color: white;
+   margin: 0px 8px;
+}
+ /*.login-info{
+    display: flex;
+    align-items: center;
+  } */
+.banner{
+    width: 556px;
+    height: 438px;
+    left: 50px;
+    top: 200px;
+    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+ }
+
+ /*--------------------------
+ player description styles
+ ------------------------- */
+ .players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 10px;
+    margin-left: 80px;
+}
+.player{
+    width: 300px;
+    height: 474px;
+    float: left;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.15);;
+    
+}
+.player-info{
+    color: white;
+    width: 300px;
+    height: 426px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
+.description{
+    color: black;
+}
+/*-----------------------------
+Highlight section styles
+------------------------------- */
+.allhighlights{
+    display: flex;
+    margin-bottom: 70px;
+ }
+.highlights{ 
+    float:left;
+    width: 40%;
+    height: auto;
+    padding: 5%; 
+}
+.about p{
+    width: 470px;
+    margin-left: 10%;
+}
+.about h1{
+    font-size: 48px;
+    width: 470px;
+    color: black;
+}
+.highlights.banner{
+    width: 567px;
+    height: 427px;
+} 
+
+
+/*---------------------------------
+footer start
+-----------------------------------*/
+footer{
+    text-align: center;
+    bottom: 0;
+}
+.footer-align{
+    background-color: #0B0D17;
+    width: 100%;
+    margin-top: 5%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    padding-left: 30%;
+    padding-right: 30%;
+    box-sizing: border-box;
+    text-align: center;
+    color:#4e525f;
+}
+#white{
+    color: white;
+    font-size: 13px;
+}
+.orange{
+    color: #f39426;
+}
+
