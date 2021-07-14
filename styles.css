@@ -6,25 +6,19 @@ body{
     margin: 0;
     padding: 0;
 }
+p{
+    color: rgb(104, 102, 102);
+    font-size: 14px;
+}
+.container{
+    display: flex;
+    margin-bottom: 70px;
+ }
 
 /*-----------------
  front cover page styles
  -------------- */
 
- /*-------navbar-------*/
-.nav {
-    display: flex;
-    justify-content:center;
-}
-.nav a {
-    text-decoration: none;
-    padding: 40px;
-    color: black;
-}
-.nav a:hover {
-    background-color: white;
-}
-/*-------navbar-------*/
 .cover-page{
     display: flex;
     background-color: #2D25A0;
@@ -64,10 +58,6 @@ span {
    color: white;
    margin: 0px 8px;
 }
- /*.login-info{
-    display: flex;
-    align-items: center;
-  } */
 .banner{
     width: 556px;
     height: 438px;
@@ -75,7 +65,6 @@ span {
     top: 200px;
     transition: transform 5s ease-in;
     transition-delay: 1s;
-    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
  }
  .banner:hover{
     transform: rotate(180deg);
@@ -84,6 +73,7 @@ span {
  /*--------------------------
  player description styles
  ------------------------- */
+
  .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -123,10 +113,6 @@ span {
 /*-----------------------------
 Highlight section styles
 ------------------------------- */
-.allhighlights{
-    display: flex;
-    margin-bottom: 50px;
- }
 .highlights{ 
     float:left;
     width: 40%;
@@ -136,6 +122,7 @@ Highlight section styles
 .about p{
     width: 470px;
     margin-left: 10%;
+    margin-bottom: 50px;
 }
 .about h1{
     font-size: 48px;
@@ -152,10 +139,8 @@ extra styles-
 ---------------------------- */
 .login-container{
     background-color: #2D25A0;
-    display: flex;
     justify-content: center;
     padding: 50px;
-    margin-bottom: 100px;
 }
 .login{
     display: flex;
@@ -214,18 +199,20 @@ footer{
 /*----------------------------
  Mobile devices media query
  ----------------------- */
-@media screen and (max-width:670px)
+@media only screen and (max-width:668px)
 {
-    .cover-page, .container, .allhighlights, .footer-align{
+    .cover-page, .container{
         width: 100%;
         flex-direction: column;
-
     }
-    .cover-description, .players, .login-form{
+    .cover-description, .players, .highlights, .login-container{
         grid-template-columns: repeat(1, 1fr);
-       
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .player{
+        flex-direction: column;
     }
     
     
